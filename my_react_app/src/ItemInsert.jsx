@@ -60,7 +60,7 @@ function ItemInsert() {
       <form onSubmit={handleS} style={{ marginBottom: "20px" }}>
         <input
           type="text"
-          placeholder="Name"
+          placeholder="Item Name"
           value={item.item_name}
           onChange={handleChange}
           name="item_name"
@@ -69,7 +69,7 @@ function ItemInsert() {
         />
         <input
           type="text"
-          placeholder="Code"
+          placeholder="Item Code"
           value={item.item_code}
           onChange={handleChange}
           name="item_code"

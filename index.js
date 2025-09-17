@@ -73,8 +73,15 @@ app.post("/updaterights", async (req, res) => {
              monthly_calendar = $5,
              yearly_calendar = $6,
              manager = $7,
-             salesman = $8
-         WHERE username = $9`,
+             salesman = $8,
+             customer_type = $9,
+             supplier_type = $10,
+             supplier = $11,
+             item_group = $12,
+             item_section = $13,
+             item_brand = $14,
+             currency = $15
+         WHERE username = $16`,
         [
           user.item,
           user.customer,
@@ -84,6 +91,13 @@ app.post("/updaterights", async (req, res) => {
           user.yearly_calendar,
           user.manager,
           user.salesman,
+          user.customer_type,
+          user.supplier_type,
+          user.supplier,
+          user.item_group,
+          user.item_section,
+          user.item_brand,
+          user.currency,
           user.username,
         ]
       );
@@ -95,6 +109,7 @@ app.post("/updaterights", async (req, res) => {
     res.status(500).json({ status: "error", message: error.message });
   }
 });
+
 
 
 

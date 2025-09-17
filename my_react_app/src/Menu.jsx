@@ -56,7 +56,7 @@ function Menu() {
   };
 
   const options = [
-    { label: "Item Insert", path: "/ItemInsert", right: menu.item },
+    { label: "Item Insert", path: "/Item2", right: menu.item },
     { label: "Customer Insert", path: "/Customer", right: menu.customer },
     { label: "Rights Insert", path: "/Rights", right: menu.rights },
     { label: "Company Insert", path: "/Company", right: menu.company },

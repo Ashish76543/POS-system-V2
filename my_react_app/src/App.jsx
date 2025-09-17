@@ -11,6 +11,7 @@ import Company from "./Company"
 import Salesman from "./Salesman"
 import Manager from "./Manager"
 import YearlyCalendar from "./YearlyCalendar"   
+import Item2 from "./Item2";
 
 import MonthlyCalendar from "./MonthlyCalendar"
 function App()
@@ -29,6 +30,7 @@ function App()
       <Route path="/Manager" element={<Manager></Manager>}></Route>
       <Route path="/YearlyCalendar" element={<YearlyCalendar></YearlyCalendar>}></Route>  
       <Route path="/MonthlyCalendar" element={<MonthlyCalendar></MonthlyCalendar>}></Route>
+      <Route path="/Item2" element={<Item2></Item2>}></Route>
     </Routes>
     </BrowserRouter>
    )
